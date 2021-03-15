@@ -1,0 +1,504 @@
+$degrade_violeta: linear-gradient(
+  4deg,
+  rgba(17, 0, 34, 1) 0%,
+  rgba(150, 28, 255, 1) 40%,
+  rgba(19, 3, 255, 1) 100%
+);
+
+$degrade_verde: linear-gradient(
+  173deg,
+  rgba(218, 255, 18, 1) 0%,
+  rgba(28, 255, 191, 1) 40%,
+  rgba(21, 255, 107, 1) 73%,
+  rgba(54, 255, 3, 1) 100%
+);
+
+$degrade_rojo: linear-gradient(
+  172deg,
+  rgba(255, 9, 9, 1) 0%,
+  rgba(255, 28, 166, 1) 40%,
+  rgba(255, 21, 155, 1) 73%,
+  rgba(255, 129, 25, 1) 100%
+);
+
+$degrade_celeste: linear-gradient(
+  169deg,
+  rgba(255, 9, 192, 1) 0%,
+  rgba(28, 255, 161, 1) 54%,
+  rgba(21, 226, 255, 1) 100%
+);
+
+$degrade_negro: linear-gradient(
+  169deg,
+  rgba(204, 24, 185, 1) 0%,
+  rgba(21, 59, 193, 1) 100%
+);
+
+$Roc-Grotesk_extended: roc-grotesk-wide, sans-serif;
+$Roc-Grotesk_condensada: roc-grotesk-compressed, sans-serif;
+
+$color_blanco: white;
+
+$fuente-chica: 1em;
+
+$black: 800;
+$bold: 600;
+$extra-bold: 700;
+$medium: 500;
+$regular: 400;
+$light: 300;
+/*hasta aca los de defecto*/
+
+#home,
+#trabajos,
+#sobremi,
+#contacto,
+#novedades {
+  padding-top: 1rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 4rem;
+  margin: 0rem;
+}
+
+body {
+  header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    .body__header--nombre-logo {
+      font-family: $Roc-Grotesk_extended;
+      font-weight: $regular;
+      font-style: normal;
+      color: $color_blanco;
+      text-decoration: none;
+      font-size: $fuente-chica;
+
+      animation: fadeInDown;
+      animation-duration: 1s;
+    }
+
+    .col-md-4 {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  }
+
+  #index_yosoy {
+    h3 {
+      animation: fadeInLeft;
+      animation-duration: 1.5s;
+    }
+  }
+
+  section {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .body__foto--perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    a {
+      text-decoration: none;
+    }
+    h3 {
+      animation: fadeInRight;
+      animation-duration: 1s;
+    }
+  }
+
+  .body_framebyframe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    animation: fadeInRight;
+    animation-duration: 1s;
+  }
+
+  .align-items-end {
+    h4 {
+      line-height: 57px;
+    }
+  }
+
+  .body__redes ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    a {
+      animation: fadeInRight;
+      animation-duration: 1s;
+    }
+  }
+
+  h1 {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $extra-bold;
+    font-style: normal;
+    font-size: 7em;
+    color: $color_blanco;
+    margin: 0px;
+    line-height: 1em;
+
+    animation: fadeInLeft;
+    animation-duration: 1s;
+  }
+
+  h2 {
+    font-family: $Roc-Grotesk_condensada;
+    font-weight: $medium;
+    font-style: normal;
+    font-size: 8em;
+    line-height: 0.9em;
+    color: $color_blanco;
+    margin: 0px;
+  }
+
+  h3 {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $regular;
+    font-style: normal;
+    font-size: 1em;
+    color: $color_blanco;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  h4 {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $extra-bold;
+    font-style: normal;
+    font-size: 4em;
+    color: $color_blanco;
+    line-height: 1em;
+    margin: 0px;
+    text-align: right;
+  }
+
+  h5 {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $bold;
+    font-style: normal;
+    color: $color_blanco;
+    text-decoration: none;
+    font-size: 3em;
+  }
+
+  h6 {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $regular;
+    font-style: normal;
+    color: $color_blanco;
+    text-decoration: none;
+    font-size: $fuente-chica;
+  }
+
+  p {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $regular;
+    font-style: normal;
+    color: $color_blanco;
+    text-decoration: none;
+    font-size: $fuente-chica;
+    margin: 0px;
+  }
+
+  #trabajos_body--2021 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  #trabajos_body--contenedor {
+    position: relative;
+    background-color: white;
+    padding: 2rem;
+
+    #trabajos_body_filas {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      #trabajos_item {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .section {
+    height: auto;
+    width: 100%;
+  }
+
+  footer {
+    padding-top: 5rem;
+    margin-bottom: 1rem;
+    p {
+      font-family: $Roc-Grotesk_extended;
+      font-weight: $extra-bold;
+      font-style: normal;
+      color: $color_blanco;
+      text-decoration: none;
+      font-size: 5em;
+      margin: 0px;
+    }
+
+    #footer_charlamos {
+      margin-bottom: 9rem;
+
+      a {
+        text-decoration: none;
+      }
+    }
+    #footer_derechos h6 {
+      text-align: center;
+    }
+  }
+}
+#conocemitrabajo {
+  display: flex;
+  justify-content: end;
+}
+
+#home {
+  background: $degrade_violeta;
+}
+
+#sobremi {
+  background: $degrade_verde;
+
+  #body_sobremi--filas {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  #sobremi_conoce--mitrabajo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    a {
+      font-family: $Roc-Grotesk_extended;
+      font-weight: $bold;
+      font-style: normal;
+      color: $color_blanco;
+      text-decoration: none;
+      font-size: $fuente-chica;
+
+      animation: fadeInDown;
+      animation-duration: 1s;
+    }
+  }
+}
+
+#trabajos {
+  background: $degrade_rojo;
+}
+
+#novedades {
+  background: $degrade_celeste;
+
+  #yt_reel {
+    padding: 2rem;
+    background-color: white;
+  }
+}
+#contacto {
+  background: $degrade_negro;
+
+  form {
+    width: 70%;
+    margin: 0auto;
+
+    input {
+      background: inherit;
+      border: none;
+      border-bottom: 2px solid white;
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+
+      font-family: $Roc-Grotesk_extended;
+      font-weight: $light;
+      font-style: normal;
+      color: $color_blanco;
+      text-decoration: none;
+      font-size: $fuente-chica;
+      opacity: 50%;
+    }
+
+    ::placeholder {
+      font-family: $Roc-Grotesk_extended;
+      font-weight: $light;
+      font-style: normal;
+      color: $color_blanco;
+      text-decoration: none;
+      font-size: $fuente-chica;
+      opacity: 30%;
+    }
+    label {
+      font-family: $Roc-Grotesk_extended;
+      font-weight: $bold;
+      font-style: normal;
+      color: $color_blanco;
+      text-decoration: none;
+      font-size: 1em;
+
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    textarea {
+      background: inherit;
+      border: none;
+      border-bottom: 2px solid white;
+
+      font-family: $Roc-Grotesk_extended;
+      font-weight: $light;
+      font-style: normal;
+      color: $color_blanco;
+      text-decoration: none;
+      font-size: $fuente-chica;
+      opacity: 30%;
+      margin-top: 1rem;
+    }
+
+    button {
+      width: 20%;
+      border: none;
+      color: white;
+      padding: 0.2rem;
+      margin-top: 1rem;
+      text-align: center;
+      text-decoration: none;
+
+      font-family: $Roc-Grotesk_extended;
+      font-weight: $regular;
+      font-style: normal;
+      color: black;
+      text-decoration: none;
+      font-size: $fuente-chica;
+    }
+  }
+}
+
+ul {
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $regular;
+    font-style: normal;
+    color: $color_blanco;
+    text-decoration: none;
+    font-size: $fuente-chica;
+
+    animation: fadeInDown;
+    animation-duration: 1s;
+  }
+
+  .body_animacion-decoracion {
+    -webkit-text-stroke: 0.5px white;
+    color: transparent;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  #home,
+  #trabajos,
+  #sobremi,
+  #contacto,
+  #novedades {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin: 0rem;
+  }
+
+  header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $extra-bold;
+    font-style: normal;
+    font-size: 2em;
+    color: $color_blanco;
+    margin: 0px;
+    line-height: 2em;
+
+    animation: fadeInLeft;
+    animation-duration: 1s;
+  }
+
+  h2 {
+    font-family: $Roc-Grotesk_condensada;
+    font-weight: $medium;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 2em;
+    color: $color_blanco;
+    margin: 0px;
+  }
+
+  h3 {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $regular;
+    font-style: normal;
+    font-size: 1em;
+    color: $color_blanco;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  h4 {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $extra-bold;
+    font-style: normal;
+    font-size: 1.5em;
+    color: $color_blanco;
+    margin: 0px;
+    text-align: right;
+  }
+
+  h5 {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $bold;
+    font-style: normal;
+    color: $color_blanco;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+
+  h6 {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $regular;
+    font-style: normal;
+    color: $color_blanco;
+    text-decoration: none;
+    font-size: $fuente-chica;
+  }
+
+  p {
+    font-family: $Roc-Grotesk_extended;
+    font-weight: $regular;
+    font-style: normal;
+    color: $color_blanco;
+    text-decoration: none;
+    font-size: $fuente-chica;
+    margin: 0px;
+  }
+}
